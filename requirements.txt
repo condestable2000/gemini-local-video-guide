@@ -1,0 +1,6 @@
+# Dependencias de Python
+google-generativeai
+yt-dlp
+fpdf
+python-dotenv
+Pillow
