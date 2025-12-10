@@ -1,0 +1,27 @@
+// Configuración de VS Code para el entorno de desarrollo
+{
+	"name": "Gemini Video Guide Generator",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	
+	// Configuraciones de VS Code dentro del contenedor
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"python.defaultInterpreterPath": "/usr/local/bin/python"
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"njpwerner.autodocstring" 
+			]
+		}
+	},
+
+	// Instala las dependencias de Python automáticamente al crear el contenedor
+	"postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
+
+	// Usuario remoto (la imagen base ya trae el usuario 'vscode')
+	"remoteUser": "vscode"
+}
