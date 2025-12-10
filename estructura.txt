@@ -15,4 +15,5 @@ gemini-tube-guide/
 │   ├── extractor.py      # Módulo que usa FFmpeg para sacar fotos
 │   └── generator.py      # Módulo que crea el PDF
 │
+├── input/                # Aquí se colocan los vídeos de entrada
 └── output/               # (Se creará sola) Aquí se guardan los vídeos y el PDF

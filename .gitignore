@@ -1,5 +1,7 @@
 # No incluir credenciales ni archivos generados
 .env
+input/*
+!input/.gitkeep
 output/
 __pycache__/
 *.pyc
