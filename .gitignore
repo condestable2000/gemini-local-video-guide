@@ -2,7 +2,8 @@
 .env
 input/*
 !input/.gitkeep
-output/
+output/*
+!output/.gitkeep
 __pycache__/
 *.pyc
 *.pyo
